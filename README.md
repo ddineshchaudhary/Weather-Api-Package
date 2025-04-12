@@ -1,0 +1,1 @@
+This is a weather api package which helps us to fetch weather data from the open source weatherapi
