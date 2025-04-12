@@ -17,7 +17,7 @@
   "keywords": [],
   "author": "Dinesh Chaudhary D",
   "license": "ISC",
-  "description": "Developing a weather app as a chrome plugin",
+  "description": "it is a package to get weather data from weather api",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ddineshchaudhary/Weather-Api-Package.git"
