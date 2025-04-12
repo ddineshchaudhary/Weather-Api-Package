@@ -1,0 +1,29 @@
+{
+  "name": "@dinesh15/weatherapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build" : "npx unbuild",
+    "publish": "npm publish --access=public",
+    "dryrun": "npm publish --dry-run"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [],
+  "author": "Dinesh Chaudhary D",
+  "license": "ISC",
+  "description": "Developing a weather app as a chrome plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddineshchaudhary/Weather-Api-Package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ddineshchaudhary/Weather-Api-Package/issues"
+  },
+  "homepage": "https://github.com/ddineshchaudhary/Weather-Api-Package"
+}
