@@ -10,17 +10,16 @@ function requireSrc () {
 	hasRequiredSrc = 1;
 	async function fetchWeatherData(apikey, location) {
 	  try {
-	    const weatherData = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${location}`, {
+	    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${location}`, {
 	      method: "GET"
 	    });
 	    if (!response.ok) {
-	      throw new Error(`http error status : ${response.status}`);
-	    } else {
-	      const data = await response.json(weatherData);
-	      return data;
+	      throw new Error(`HTTP error status: ${response.status}`);
 	    }
+	    const data = await response.json();
+	    return data;
 	  } catch (error) {
-	    console.log("error message : ", error);
+	    console.log("Error message:", error);
 	  }
 	}
 	src = fetchWeatherData;
