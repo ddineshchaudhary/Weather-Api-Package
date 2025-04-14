@@ -1,10 +1,10 @@
 {
   "name": "@dinesh15/weatherapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build" : "npx unbuild",
+    "build": "npx unbuild",
     "publish": "npm publish --access=public",
     "dryrun": "npm publish --dry-run"
   },
